@@ -50,24 +50,6 @@ nav .nav-center .nav-header .nav-title .nav-logo-text .aljanabi-span {
 
 nav .nav-center .nav-header .nav-toggle {
   display: none;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-nav .nav-center .nav-header .nav-toggle .bars-active {
-  font-size: 3rem;
-  color: rgb(18, 96, 133);
-  transition: all 0.5s;
-}
-
-nav .nav-center .nav-header .nav-toggle .bars {
-  font-size: 3rem;
-  color: rgb(22, 133, 18);
-  transition: all 0.5s;
-  transform: rotate(90deg);
 }
 
 /* links */
@@ -135,30 +117,34 @@ nav .nav-center .social-icons li a {
     background: none;
     border: none;
   }
-
   nav .nav-center .nav-header .nav-toggle .bars-active {
     font-size: 3rem;
     color: rgb(18, 96, 133);
     transition: all 0.5s;
   }
-
   nav .nav-center .nav-header .nav-toggle .bars {
     font-size: 3rem;
     color: rgb(22, 133, 18);
     transition: all 0.5s;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
   }
 
   /* links */
 
   nav .nav-center .links {
     display: block;
-    justify-content: center;
     width: 100%;
     list-style: none;
     height: 0;
+    margin-top: 0;
     overflow: hidden;
     transition: all 1s;
+  }
+
+  /* Remember to chain it up properly with no spaces or it wont show */
+  nav .nav-center .links.links-active {
+    height: 276px;
+    margin-top: 50px;
   }
 
   nav .nav-center .links li {
